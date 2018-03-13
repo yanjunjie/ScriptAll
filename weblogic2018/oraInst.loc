@@ -1,0 +1,4 @@
+#Oracle Installer Location File Location
+inst_group=mw
+inventory_loc=/home/weblogic/oraInventory
+

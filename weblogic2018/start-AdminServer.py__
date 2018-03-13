@@ -1,0 +1,15 @@
+#-*-coding:utf8-*-
+
+import subprocess
+import sys,os
+
+def execute_command(cmd):
+   #print ('start execting cmd...')
+   s = os.system(cmd)
+   #print ('finish executing cmd....')
+   return s
+
+cmd = '/midware/wls12.1.3/script/start-AdminServer.sh'
+result = execute_command(cmd)
+#print (result)
+
