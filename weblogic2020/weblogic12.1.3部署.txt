@@ -1,0 +1,11 @@
+sh 1.install
+
+sh 3.createDomain.sh           channelqueryapp    20.20.20.20  8060 weblogic 'password' root root1234  /midware/scripts/
+
+sh 4.createManagedServer.sh    channel-query-app  20.20.20.20  8060 channelqueryapp01-srv01 20.20.20.20 8061 /midware/scripts/
+
+                               channel-query-app  20.20.20.20  8060 channelqueryapp01-srv02 20.20.20.21 8061 /midware/scripts/
+
+sh 5.configCluster.sh 	       20.20.20.20  8600 channelqueryapp  channelqueryapp01-srv01  /midware/scripts/
+                	       20.20.20.20  8600 channelqueryapp  channelqueryapp01-srv02  /midware/scripts/
+						
